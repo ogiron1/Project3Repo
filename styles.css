@@ -110,7 +110,6 @@ p, li {
   font-size: 1rem;
 }
 
-/* Map page styles */
 #map {
   height: 500px;
   width: 100%;
@@ -135,7 +134,6 @@ p, li {
   color: #333;
 }
 
-/* Media Query 1: Tablets and small devices (min-width: 768px) */
 @media (min-width: 768px) {
   body {
     padding: 1em;
@@ -152,7 +150,6 @@ p, li {
   }
 }
 
-/* Media Query 2: Desktop and larger screens (min-width: 1024px) */
 @media (min-width: 1024px) {
   body {
     padding: 2em;
