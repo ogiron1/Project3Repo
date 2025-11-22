@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function loadGoogleMapsAPI() {
     const script = document.createElement('script');
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&loading=async&libraries=marker&callback=initMap';
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
