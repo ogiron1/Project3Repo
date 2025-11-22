@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#farm-body {
+  background-image: url("../images/shovelgod.jpg");
+}
+
+.farm-page h1 {
+  color: #da0d0d;
+}
+
+.farm-page h2 {
+  color: #da0d0d;
+}
+
+.farm-page h3 {
+  color: #da0d0d;
+}
+
+
+.farm-page li {
+  color: #ded014;
+}
+
+nav {
+  background-color: #004d99;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+
+main {
+  max-width: 60rem;
+  margin: 2em auto;
+  background-color: white;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h6 {
+  color: #004d99;
+}
+
+
+ul {
+  list-style-type: square;
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 1em;
+  display: block;
+  margin: 1.5em auto;
+}
+
+
+.fluid-layout main {
+  width: 80%;
+  max-width: none;
+  padding: 3vw;
+  font-size: 1.1rem;
+}
+
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+/* Map page styles */
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 1em;
+  margin: 2em 0;
+}
+
+#contact-btn {
+  background-color: #004d99;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1em 0;
+}
+
+#contact-btn:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+/* Media Query 1: Tablets and small devices (min-width: 768px) */
+@media (min-width: 768px) {
+  body {
+    padding: 1em;
+    font-size: 1.05rem;
+  }
+  
+  nav li {
+    margin: 0 2em;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+/* Media Query 2: Desktop and larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  body {
+    padding: 2em;
+  }
+  
+  nav {
+    padding: 1.5em 0;
+  }
+  
+  nav a {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  img {
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+}
