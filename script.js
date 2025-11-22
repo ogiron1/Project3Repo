@@ -41,19 +41,19 @@ function initMap() {
             position: { lat: 41.87304250665484, lng: - 87.62791435673566},
             title: 'Jones College Prep',
             description: 'Oliver Giron GPA Factory',
-            url: https://www.jonescollegeprep.org/
+            url: 'https://www.jonescollegeprep.org/'
         },
         {
             position: { lat: 41.865911466480945, lng: - 87.6623126094171 },
             title: 'The Farm',
             description: 'The site of shovel apotheosis',
-            url: https://www.urbangrowerscollective.org/
+            url: 'https://www.urbangrowerscollective.org/'
         },
         {
             position: { lat: 41.87406169267821, lng: - 87.61953040501061 },
             title: 'Grant Park',
             description: 'Optimal location to be jobless',
-            url: https://www.chicagoparkdistrict.com/parks-facilities/grant-ulysses-park
+            url: 'https://www.chicagoparkdistrict.com/parks-facilities/grant-ulysses-park'
         }
     ];
 
