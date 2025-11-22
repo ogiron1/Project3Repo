@@ -20,14 +20,16 @@ function loadGoogleMapsAPI() {
     document.head.appendChild(script);
 }
 
-function initMap() {
+async function initMap() {
+    const centerLocation = { lat: 41.87304250665484, lng: -87.62791435673566 };
 
-    const centerLocation = { lat: 41.87304250665484, lng: - 87.62791435673566 };
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-    const map = new google.maps.Map(document.getElementById('map'), {
+    const map = new Map(document.getElementById('map'), {
         zoom: 12,
         center: centerLocation,
-        mapTypeId: 'roadmap',
+        mapId: 'DEMO_MAP_ID',
         mapTypeControl: true,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
@@ -38,19 +40,19 @@ function initMap() {
 
     const locations = [
         {
-            position: { lat: 41.87304250665484, lng: - 87.62791435673566},
+            position: { lat: 41.87304250665484, lng: -87.62791435673566 },
             title: 'Jones College Prep',
             description: 'Oliver Giron GPA Factory',
             url: 'https://www.jonescollegeprep.org/'
         },
         {
-            position: { lat: 41.865911466480945, lng: - 87.6623126094171 },
+            position: { lat: 41.865911466480945, lng: -87.6623126094171 },
             title: 'The Farm',
             description: 'The site of shovel apotheosis',
             url: 'https://www.urbangrowerscollective.org/'
         },
         {
-            position: { lat: 41.87406169267821, lng: - 87.61953040501061 },
+            position: { lat: 41.87406169267821, lng: -87.61953040501061 },
             title: 'Grant Park',
             description: 'Optimal location to be jobless',
             url: 'https://www.chicagoparkdistrict.com/parks-facilities/grant-ulysses-park'
@@ -58,11 +60,10 @@ function initMap() {
     ];
 
     locations.forEach(function (loc) {
-        const marker = new google.maps.Marker({
-            position: loc.position,
+        const marker = new AdvancedMarkerElement({
             map: map,
-            title: loc.title,
-            animation: google.maps.Animation.DROP
+            position: loc.position,
+            title: loc.title
         });
 
         const infoWindow = new google.maps.InfoWindow({
